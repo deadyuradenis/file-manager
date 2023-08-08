@@ -1,0 +1,44 @@
+@import "Core/config/theme/index.scss";
+@import "Core/lib/theme/index.scss";
+
+.file {
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 2px 0;
+
+    color: $dark;
+    fill: $dark;
+
+    transition: color 0.3s ease, fill 0.3s ease;
+
+    &:hover {
+        color: $blue;
+        fill: $blue;
+    }
+
+    &:active {
+        color: $blue-light;
+        fill: $blue-light;
+    }
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    &__name {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+
+        font-size: 16px;
+        line-height: 125%;
+        overflow-wrap: break-word;
+        text-overflow: ellipsis;
+    }
+}

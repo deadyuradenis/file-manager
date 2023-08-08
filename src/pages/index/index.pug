@@ -1,0 +1,149 @@
+extends /core/templates/default.pug
+include /core/lib/layout/index.pug
+
+block title 
+    title Index
+
+block beforeWorkarea
+
+block workarea
+    section.section 
+        .container 
+            .section__inner 
+                .container
+                
+                .folder.is-open(data-component="folder")
+                    button.folder__button(type="button", data-folder="button")
+                    .folder__content
+                        button.folder__header(type="button", data-folder="header")
+                            .folder__icons 
+                                +icon('folder').folder__icon
+                                +icon('folder-open').folder__icon
+                            span.folder__name Folder main
+
+                        .folder__body 
+                            .folder__body-content
+
+                                .folder.folder__item(data-component="folder")
+                                    button.folder__button(type="button", data-folder="button")
+                                    .folder__content
+                                        button.folder__header(type="button", data-folder="header")
+                                            .folder__icons 
+                                                +icon('folder').folder__icon
+                                                +icon('folder-open').folder__icon
+                                            span.folder__name Folder 0
+
+                                        .folder__body 
+                                            .folder__body-content
+                                                
+                                                .folder.folder__item(data-component="folder")
+                                                    button.folder__button(type="button", data-folder="button")
+                                                    .folder__content
+                                                        button.folder__header(type="button", data-folder="header")
+                                                            .folder__icons 
+                                                                +icon('folder').folder__icon
+                                                                +icon('folder-open').folder__icon
+                                                            span.folder__name Empty folder
+
+                                                        .folder__body 
+                                                            .folder__body-content
+                                                            
+                                .file.folder__item
+                                    +icon('file').file__icon
+                                    span.file__name File_1.js
+
+                                .file.folder__item
+                                    +icon('file').file__icon
+                                    span.file__name File_2.md
+
+                                .folder.folder__item(data-component="folder")
+                                    button.folder__button(type="button", data-folder="button")
+                                    .folder__content
+                                        button.folder__header(type="button", data-folder="header")
+                                            .folder__icons 
+                                                +icon('folder').folder__icon
+                                                +icon('folder-open').folder__icon
+                                            span.folder__name Folder 1
+
+                                        .folder__body 
+                                            .folder__body-content
+                                                .file.folder__item
+                                                    +icon('file').file__icon
+                                                    span.file__name File_3.js
+                                                .file.folder__item
+                                                    +icon('file').file__icon
+                                                    span.file__name File_4.css
+                                                .file.folder__item
+                                                    +icon('file').file__icon
+                                                    span.file__name File_5.html
+
+                                .file.folder__item
+                                    +icon('file').file__icon
+                                    span.file__name File_6.md
+
+                                .folder.folder__item(data-component="folder")
+                                    button.folder__button(type="button", data-folder="button")
+                                    .folder__content
+                                        button.folder__header(type="button", data-folder="header")
+                                            .folder__icons 
+                                                +icon('folder').folder__icon
+                                                +icon('folder-open').folder__icon
+                                            span.folder__name Folder 2
+
+                                        .folder__body 
+                                            .folder__body-content
+                                                .file.folder__item
+                                                    +icon('file').file__icon
+                                                    span.file__name aoPqRsTuVsTBcDeFgHiJkLmNoPqRsTuVwXyZYsTuVUI.txt
+
+                                                .folder.folder__item(data-component="folder")
+                                                    button.folder__button(type="button", data-folder="button")
+                                                    .folder__content
+                                                        button.folder__header(type="button", data-folder="header")
+                                                            .folder__icons 
+                                                                +icon('folder').folder__icon
+                                                                +icon('folder-open').folder__icon
+                                                            span.folder__name Folder 3
+
+                                                        .folder__body 
+                                                            .folder__body-content
+                                                                .file.folder__item
+                                                                    +icon('file').file__icon
+                                                                    span.file__name File_7.js
+                                                                .file.folder__item
+                                                                    +icon('file').file__icon
+                                                                    span.file__name File_8.md
+
+                                                .folder.folder__item(data-component="folder")
+                                                    button.folder__button(type="button", data-folder="button")
+                                                    .folder__content
+                                                        button.folder__header(type="button", data-folder="header")
+                                                            .folder__icons 
+                                                                +icon('folder').folder__icon
+                                                                +icon('folder-open').folder__icon
+                                                            span.folder__name Folder 4
+
+                                                        .folder__body 
+                                                            .folder__body-content
+                                                                
+                                                                .folder.folder__item(data-component="folder")
+                                                                    button.folder__button(type="button", data-folder="button")
+                                                                    .folder__content
+                                                                        button.folder__header(type="button", data-folder="header")
+                                                                            .folder__icons 
+                                                                                +icon('folder').folder__icon
+                                                                                +icon('folder-open').folder__icon
+                                                                            span.folder__name Empty folder
+
+                                                                        .folder__body 
+                                                                            .folder__body-content
+                                                                                
+                                .file.folder__item
+                                    +icon('file').file__icon
+                                    span.file__name File_9.js
+
+                                .file.folder__item
+                                    +icon('file').file__icon
+                                    span.file__name File_10.js
+
+block afterWorkarea

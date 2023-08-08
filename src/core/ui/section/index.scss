@@ -1,0 +1,10 @@
+@import "Core/config/theme/index.scss";
+@import "Core/lib/theme/index.scss";
+
+.section {
+    display: flex;
+
+    flex-grow: 1;
+
+    padding: 80px 0;
+}

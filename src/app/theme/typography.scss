@@ -1,0 +1,9 @@
+@import "Core/config/theme/index.scss";
+@import "Core/lib/theme/index.scss";
+
+@include font("Cousine", 300, "Cousine", "Cousine-Regular");
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
